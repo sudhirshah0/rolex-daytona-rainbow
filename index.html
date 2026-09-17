@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exploded Daytona Rainbow | Rolex Ref. 126595RBOW | TLF</title>
+  <meta name="description" content="Discover the Rolex Cosmograph Daytona 40mm Rainbow Sapphire (Ref. 126595RBOW) in an interactive scroll-driven exploded 300-frame horological animation on deep burgundy velvet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="velvet-theme">
+  <!-- Loading Curtain for Frame Sequence -->
+
+  <!-- Ambient Velvet Backdrop & Particles -->
+  <div class="velvet-backdrop" aria-hidden="true">
+    <div class="velvet-glow glow-top"></div>
+    <div class="velvet-glow glow-center"></div>
+    <div class="velvet-glow glow-bottom"></div>
+    <canvas id="ambient-particles" class="particles-canvas"></canvas>
+    <div class="velvet-grain"></div>
+  </div>
+
+  <main>
+    <!-- ====================================================================
+         HERO SECTION: 300-FRAME SCROLL-DRIVEN EXPLODED ANIMATION & EMBEDDED NAV
+         ==================================================================== -->
+    <section class="scroll-animation-track" id="hero-track">
+      <div class="sticky-viewport" id="sticky-viewport">
+        <!-- Floating Hero Controls: Minimalist Brand Logo & Reserve Button -->
+        <div class="hero-floating-nav" id="hero-floating-nav">
+          <div class="brand-group">
+            <a href="#hero-track" class="brand-link" aria-label="Rolex">
+              <div class="rolex-logo">
+                <svg class="rolex-coronet" viewBox="0 0 40 28" fill="currentColor" aria-hidden="true">
+                  <path d="M20 0.5L23.4 9.5L32.2 4.2L30.1 14.8L39.5 12.7L34.3 22.4H5.7L0.5 12.7L9.9 14.8L7.8 4.2L16.6 9.5L20 0.5ZM8.5 24.2H31.5V26.2H8.5V24.2Z"/>
+                </svg>
+                <span class="rolex-text">ROLEX</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="hero-reserve-box">
+            <button class="cta-reserve-header" id="header-reserve-btn" aria-label="Reserve Rolex Daytona Rainbow">
+              <span class="cta-border-glow"></span>
+              <span class="cta-text">Reserve Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pure 300-Frame Animation Canvas -->
+        <canvas id="watch-scroll-canvas" class="watch-canvas"></canvas>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 1: THE ASSEMBLED MASTERPIECE (ORIGINAL POSITION SHOWCASE)
+         ==================================================================== -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-container">
+        <div class="gallery-layout-grid">
+          <!-- Left Column: Typography & Key Horology Notes -->
+          <div class="gallery-text-col anim-fade-up">
+            <div class="section-heading-container">
+              <div class="section-eyebrow anim-text-reveal">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">THE ASSEMBLED MASTERPIECE</span>
+                <span class="eyebrow-line"></span>
+              </div>
+              <h2 class="section-title anim-text-reveal anim-delay-1">THE ICONIC SILHOUETTE</h2>
+              <p class="section-subtitle anim-text-reveal anim-delay-2">
+                Harmoniously reunited into its definitive, breathtaking form. Ref. 126595RBOW in solid 18k Everose gold.
+              </p>
+            </div>
+
+            <div class="gallery-feature-list">
+              <div class="gallery-feature-item anim-fade-up anim-delay-1">
+                <span class="gallery-feature-num">01</span>
+                <div class="gallery-feature-content">
+                  <strong>36 Baguette Rainbow Sapphires</strong>
+                  <p>Graduated spectrum channel-set into the solid 18k Everose bezel.</p>
+                </div>
+              </div>
+
+              <div class="gallery-feature-item anim-fade-up anim-delay-2">
+                <span class="gallery-feature-num">02</span>
+                <div class="gallery-feature-content">
+                  <strong>56 Brilliant-Cut Diamonds</strong>
+                  <p>Masterfully grain-set into the lugs and crown protectors.</p>
+                </div>
+              </div>
+
+              <div class="gallery-feature-item anim-fade-up anim-delay-3">
+                <span class="gallery-feature-num">03</span>
+                <div class="gallery-feature-content">
+                  <strong>Calibre 4131 Manufacture</strong>
+                  <p>Superlative Chronometer with Chronergy escapement &amp; 72h reserve.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Vertical Watch Display with Precision Hotspots -->
+          <div class="gallery-image-col anim-fade-up anim-delay-1">
+            <div class="gallery-img-wrap assembled-img-wrap" id="assembled-canvas-wrap">
+              <img 
+                src="assets/daytona_assembled_vertical.png" 
+                alt="Rolex Cosmograph Daytona Rainbow fully assembled vertical" 
+                class="gallery-hero-img assembled-watch-img"
+                id="assembled-watch-img"
+                loading="lazy"
+              />
+              <div class="gallery-rainbow-glow"></div>
+
+              <!-- Precision Hotspots on the Vertical Assembled Watch -->
+              <div class="master-pin pin-bezel" style="top: 36%; left: 50%;">
+                <span class="m-pin-ring"></span>
+                <span class="m-pin-dot"></span>
+                <div class="m-pin-card">
+                  <span class="m-pin-layer">LAYER 01 &bull; BEZEL</span>
+                  <strong>Rainbow Sapphire Bezel</strong>
+                  <p>36 Baguette-cut sapphires in graduated spectrum</p>
+                </div>
+              </div>
+
+              <div class="master-pin pin-dial" style="top: 52%; left: 47%;">
+                <span class="m-pin-ring"></span>
+                <span class="m-pin-dot"></span>
+                <div class="m-pin-card">
+                  <span class="m-pin-layer">LAYER 02 &bull; DIAL</span>
+                  <strong>Black Lacquer Dial</strong>
+                  <p>11 Baguette diamonds with Everose crystal subdials</p>
+                </div>
+              </div>
+
+              <div class="master-pin pin-lugs" style="top: 32%; left: 24%;">
+                <span class="m-pin-ring"></span>
+                <span class="m-pin-dot"></span>
+                <div class="m-pin-card">
+                  <span class="m-pin-layer">LAYER 03 &bull; LUGS</span>
+                  <strong>56 Brilliant Diamonds</strong>
+                  <p>Flush grain-set into lugs and crown protectors</p>
+                </div>
+              </div>
+
+              <div class="master-pin pin-bracelet" style="top: 84%; left: 47%;">
+                <span class="m-pin-ring"></span>
+                <span class="m-pin-dot"></span>
+                <div class="m-pin-card">
+                  <span class="m-pin-layer">LAYER 04 &bull; BRACELET</span>
+                  <strong>18k Everose Oyster</strong>
+                  <p>Oysterlock clasp with Easylink 5mm comfort extension</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: MINIMAL TECHNICAL SPECIFICATIONS
+         ==================================================================== -->
+    <section class="specs-section" id="specs">
+      <div class="section-container">
+        <div class="section-heading-container">
+          <div class="section-eyebrow anim-text-reveal">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">FACTORY ATTRIBUTES</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h2 class="section-title anim-text-reveal anim-delay-1">TECHNICAL SPECIFICATIONS</h2>
+          <p class="section-subtitle anim-text-reveal anim-delay-2">
+            Every millimeter engineered to superlative standards in the Rolex manufacture.
+          </p>
+        </div>
+
+        <!-- Clean Minimalist Grid -->
+        <div class="minimal-specs-grid">
+          <div class="spec-tile anim-fade-up anim-delay-1">
+            <span class="spec-tile-num anim-text-reveal">01</span>
+            <h4 class="spec-tile-label anim-text-reveal">CASE</h4>
+            <p class="spec-tile-val anim-text-reveal anim-delay-1">40mm &bull; 18k Everose Gold</p>
+            <span class="spec-tile-sub anim-text-reveal anim-delay-2">Monobloc middle case &bull; 100m Waterproof</span>
+          </div>
+
+          <div class="spec-tile anim-fade-up anim-delay-2">
+            <span class="spec-tile-num anim-text-reveal">02</span>
+            <h4 class="spec-tile-label anim-text-reveal">BEZEL</h4>
+            <p class="spec-tile-val anim-text-reveal anim-delay-1">36 Baguette Sapphires</p>
+            <span class="spec-tile-sub anim-text-reveal anim-delay-2">Graduated rainbow spectrum &bull; Channel-set</span>
+          </div>
+
+          <div class="spec-tile anim-fade-up anim-delay-3">
+            <span class="spec-tile-num anim-text-reveal">03</span>
+            <h4 class="spec-tile-label anim-text-reveal">LUGS &amp; GUARDS</h4>
+            <p class="spec-tile-val anim-text-reveal anim-delay-1">56 Brilliant-Cut Diamonds</p>
+            <span class="spec-tile-sub anim-text-reveal anim-delay-2">Top Wesselton / VVS clarity grain-set</span>
+          </div>
+
+          <div class="spec-tile anim-fade-up anim-delay-1">
+            <span class="spec-tile-num anim-text-reveal">04</span>
+            <h4 class="spec-tile-label anim-text-reveal">DIAL</h4>
+            <p class="spec-tile-val anim-text-reveal anim-delay-1">Black Lacquer with Diamonds</p>
+            <span class="spec-tile-sub anim-text-reveal anim-delay-2">11 Baguette hour markers &bull; Everose subdials</span>
+          </div>
+
+          <div class="spec-tile anim-fade-up anim-delay-2">
+            <span class="spec-tile-num anim-text-reveal">05</span>
+            <h4 class="spec-tile-label anim-text-reveal">CALIBRE</h4>
+            <p class="spec-tile-val anim-text-reveal anim-delay-1">Rolex Calibre 4131</p>
+            <span class="spec-tile-sub anim-text-reveal anim-delay-2">Superlative Chronometer &bull; 72h Reserve</span>
+          </div>
+
+          <div class="spec-tile anim-fade-up anim-delay-3">
+            <span class="spec-tile-num anim-text-reveal">06</span>
+            <h4 class="spec-tile-label anim-text-reveal">BRACELET</h4>
+            <p class="spec-tile-val anim-text-reveal anim-delay-1">Oyster Solid 18k Everose</p>
+            <span class="spec-tile-sub anim-text-reveal anim-delay-2">Oysterlock safety clasp &bull; Easylink extension</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: MINIMAL ACQUISITION & RESERVATION
+         ==================================================================== -->
+    <section class="acquisition-section" id="acquisition">
+      <div class="section-container">
+        <div class="acquisition-card anim-fade-up">
+          <div class="acq-header">
+            <div class="acq-pill anim-text-reveal">EXCLUSIVE ALLOCATION</div>
+            <div class="acq-stock anim-text-reveal anim-delay-1">ONLY 1 IN VAULT</div>
+          </div>
+
+          <div class="acq-body">
+            <div class="acq-curator">
+              <span class="curator-name anim-text-reveal">CURATED BY JORDANxTLF</span>
+              <span class="curator-title anim-text-reveal anim-delay-1">Private Horological Division &bull; Geneva / Dubai</span>
+            </div>
+
+            <div class="acq-price-box anim-fade-up anim-delay-2">
+              <span class="price-aed anim-text-shimmer">AED 1,816,650</span>
+              <span class="price-usd anim-text-reveal anim-delay-3">&asymp; $494,600 USD</span>
+            </div>
+
+            <div class="acq-guarantees anim-fade-up anim-delay-3">
+              <span class="g-item anim-text-reveal">&check; Rolex NFC Card Authenticated</span>
+              <span class="g-item anim-text-reveal anim-delay-1">&check; 2-Year Full Warranty</span>
+              <span class="g-item anim-text-reveal anim-delay-2">&check; Insured Armored Courier</span>
+              <span class="g-item anim-text-reveal anim-delay-3">&check; Sovereign Escrow Settlement</span>
+            </div>
+
+            <button class="acq-reserve-btn anim-fade-up anim-delay-4" id="grand-reserve-trigger" aria-label="Reserve Rolex Daytona Rainbow">
+              <span class="acq-btn-sheen"></span>
+              <span class="acq-btn-text">RESERVE THIS MASTERPIECE</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER (MINIMAL)
+       ==================================================================== -->
+  <footer class="minimal-footer anim-fade-up">
+    <div class="footer-container">
+      <div class="footer-brand-col anim-fade-up anim-delay-1">
+        <div class="footer-logos anim-text-reveal">
+          <span class="f-rolex">ROLEX</span>
+          <span class="f-sep">|</span>
+          <span class="f-tlf">THE LUXURY FINDER</span>
+        </div>
+        <p class="f-copyright anim-text-reveal anim-delay-2">
+          &copy; 2026 TLF (The Luxury Finder). All Rights Reserved. Not affiliated with Rolex SA except as independent luxury horology curators.
+        </p>
+      </div>
+
+      <div class="footer-links-col anim-fade-up anim-delay-2">
+        <ul class="footer-nav">
+          <li class="anim-text-reveal"><a href="#terms" class="f-link" id="footer-terms-btn">Terms of Service</a></li>
+          <li class="anim-text-reveal anim-delay-1"><span class="f-bullet">&bull;</span></li>
+          <li class="anim-text-reveal anim-delay-1"><a href="#privacy" class="f-link" id="footer-privacy-btn">Privacy Policy</a></li>
+          <li class="anim-text-reveal anim-delay-2"><span class="f-bullet">&bull;</span></li>
+          <li class="anim-text-reveal anim-delay-2"><a href="#verification" class="f-link" id="footer-verify-btn">TLF Verification Center</a></li>
+          <li class="anim-text-reveal anim-delay-3"><span class="f-bullet">&bull;</span></li>
+          <li class="anim-text-reveal anim-delay-3"><a href="#authentication" class="f-link">Private Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-secure-col anim-fade-up anim-delay-3">
+        <span class="secure-badge anim-text-reveal">
+          <span class="secure-dot"></span>
+          TLF CRYPTOGRAPHIC VAULT REGISTERED &bull; UAE / CH / UK
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       VIP RESERVATION MODAL
+       ==================================================================== -->
+  <div class="luxury-modal-overlay" id="reserve-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-rainbow-line"></div>
+        <span class="modal-tag">CONFIDENTIAL INTAKE &bull; REF. 126595RBOW</span>
+        <h3 id="modal-title" class="modal-title">REQUEST PRIVATE ALLOCATION</h3>
+        <p class="modal-subtitle">
+          Submit your credentials to connect directly with <strong>JordanxTLF</strong> and our private client suite.
+        </p>
+      </div>
+
+      <form class="reservation-form" id="reservation-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="res-name">Full Legal Name</label>
+            <input type="text" id="res-name" required placeholder="e.g. Lord Alexander Wright">
+          </div>
+          <div class="form-group">
+            <label for="res-email">Confidential Email</label>
+            <input type="email" id="res-email" required placeholder="e.g. wright@familyoffice.com">
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="res-phone">Direct Mobile / WhatsApp</label>
+            <input type="tel" id="res-phone" required placeholder="+971 50 000 0000">
+          </div>
+          <div class="form-group">
+            <label for="res-location">Preferred Handover City</label>
+            <select id="res-location">
+              <option value="Dubai">Dubai &bull; DIFC Private Vault</option>
+              <option value="Geneva">Geneva &bull; Rue du Rhône</option>
+              <option value="London">London &bull; Mayfair Suite</option>
+              <option value="New York">New York &bull; 5th Avenue</option>
+              <option value="Worldwide Armored Delivery">Direct Armored Courier to Residence</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="res-message">Special Accommodations / Escrow Preferences</label>
+          <textarea id="res-message" rows="3" placeholder="Specify any security arrangements, escrow requirements, or viewing schedules..."></textarea>
+        </div>
+
+        <div class="form-price-summary">
+          <div class="summary-line">
+            <span>Timepiece Allocation:</span>
+            <strong>Rolex Daytona 40mm Rainbow (126595RBOW)</strong>
+          </div>
+          <div class="summary-line">
+            <span>Agreed Reserve Price:</span>
+            <strong class="gold-summary">1,816,650 AED</strong>
+          </div>
+        </div>
+
+        <button type="submit" class="modal-submit-btn">
+          <span class="btn-rainbow-border"></span>
+          <span class="btn-submit-text">TRANSMIT VIP RESERVATION</span>
+        </button>
+
+        <p class="modal-legal-note">
+          Submitting this inquiry does not initiate an immediate card charge. JordanxTLF will contact you securely within 30 minutes to verify credentials and execute escrow agreements.
+        </p>
+      </form>
+
+      <div class="modal-success-state" id="modal-success" style="display: none;">
+        <div class="success-icon-wrap">
+          <span class="success-gem">&check;</span>
+        </div>
+        <h3>RESERVATION INTAKE RECORDED</h3>
+        <p>
+          Your confidential request for <strong>Ref. 126595RBOW</strong> has been transmitted to <strong>JordanxTLF</strong>. A senior private concierge will contact your verified phone and email within 30 minutes.
+        </p>
+        <div class="token-code-box">
+          <span class="token-label">YOUR SECURITY TOKEN</span>
+          <span class="token-value">TLF-RBOW-2026-9941</span>
+        </div>
+        <button class="modal-done-btn" id="modal-done-btn">Return to Showcase</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
