@@ -388,14 +388,14 @@ body {
   position: relative;
   width: 100%;
   height: 520vh; /* Long scroll track for buttery-smooth 300 frame scrub */
-  background: #0a0105;
+  background: #0d0206;
 }
 
 .sticky-viewport {
   position: sticky;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -411,7 +411,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   z-index: 1;
   background: #0d0206;
   -webkit-transform: translate3d(0, 0, 0);

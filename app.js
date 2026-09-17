@@ -81,7 +81,7 @@ function initFrameSequence() {
     return null;
   }
 
-  // Draw frame to canvas with aspect-ratio containment and centered placement
+  // Draw frame to canvas with aspect-ratio cover mode to eliminate black side bars
   function renderFrame(index) {
     const img = getClosestLoadedFrame(index);
     if (!img) return;
@@ -100,16 +100,17 @@ function initFrameSequence() {
 
     let drawW, drawH, drawX, drawY;
 
+    // Cover mode: stretches image to fill all screen space without left/right letterboxing
     if (canvasRatio > imgRatio) {
-      drawH = canvasH;
-      drawW = drawH * imgRatio;
-      drawX = (canvasW - drawW) * 0.5;
-      drawY = 0;
-    } else {
       drawW = canvasW;
       drawH = drawW / imgRatio;
       drawX = 0;
       drawY = (canvasH - drawH) * 0.5;
+    } else {
+      drawH = canvasH;
+      drawW = drawH * imgRatio;
+      drawX = (canvasW - drawW) * 0.5;
+      drawY = 0;
     }
 
     ctx.drawImage(img, drawX, drawY, drawW, drawH);
